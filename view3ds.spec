@@ -6,6 +6,7 @@ Release:	1
 License:	LGPL
 Group:		X11/Applications/Graphics
 Source0:	http://dl.sourceforge.net/lib3ds/%{name}-%{version}.tar.gz
+# Source0-md5:	d2b297379865111654537dd141e0e79a
 Patch0:		%{name}-update.patch
 URL:		http://lib3ds.sourceforge.net/
 BuildRequires:	OpenGL-devel
