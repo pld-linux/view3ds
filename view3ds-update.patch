@@ -1,0 +1,32 @@
+--- view3ds-1.0.0/view3ds/document.cpp.orig	Mon Jan 15 11:56:12 2001
++++ view3ds-1.0.0/view3ds/document.cpp	Mon Mar 24 21:01:34 2003
+@@ -42,7 +42,7 @@
+ Document::~Document()
+ {
+   if (d_file) {
+-    lib3ds_close(d_file);
++    lib3ds_file_free(d_file);
+     d_file=0;
+   }
+ }
+@@ -55,17 +55,17 @@
+ Document::open(QString filename)
+ {
+   if (d_file) {
+-    lib3ds_close(d_file);
++    lib3ds_file_free(d_file);
+     d_file=0;
+   }
+-  d_file=lib3ds_open((const char*)filename);
++  d_file=lib3ds_file_load((const char*)filename);
+   if (!d_file) {
+     puts("***ERROR*** Loading 3DS file failed.");
+     return(false);
+   }
+   if (!d_file->cameras) {
+     puts("***ERROR*** No Camera found.");
+-    lib3ds_close(d_file);
++    lib3ds_file_free(d_file);
+     d_file=0;
+     return(false);
+   }
