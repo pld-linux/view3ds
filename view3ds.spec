@@ -31,7 +31,7 @@ oparta na bibliotece 3ds
 
 %build
 # extract CONFIGURE_{X11,OPENGL,QT} macros
-tail +627 aclocal.m4 > acinclude.m4
+tail -n +627 aclocal.m4 > acinclude.m4
 # ...but ac/am/lt cannot be rebuilt - Makefile.in is hacked for moc :/
 cp -f /usr/share/automake/config.* .
 CPP="%{__cxx} -E"; export CPP
