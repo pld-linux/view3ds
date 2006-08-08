@@ -27,7 +27,7 @@ oparta na bibliotece 3ds
 
 %prep
 %setup -q
-%patch -p1
+%patch0 -p1
 
 %build
 # extract CONFIGURE_{X11,OPENGL,QT} macros
