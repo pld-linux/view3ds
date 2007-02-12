@@ -1,5 +1,5 @@
 Summary:	A simple realtime 3DS file previewer
-Summary(pl.UTF-8):   Prosta przeglądarka plików 3DS działająca w czasie rzeczywistym
+Summary(pl.UTF-8):	Prosta przeglądarka plików 3DS działająca w czasie rzeczywistym
 Name:		view3ds
 Version:	1.0.0
 Release:	1
