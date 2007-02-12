@@ -1,5 +1,5 @@
 Summary:	A simple realtime 3DS file previewer
-Summary(pl):	Prosta przegl±darka plików 3DS dzia³aj±ca w czasie rzeczywistym
+Summary(pl.UTF-8):   Prosta przeglÄ…darka plikÃ³w 3DS dziaÅ‚ajÄ…ca w czasie rzeczywistym
 Name:		view3ds
 Version:	1.0.0
 Release:	1
@@ -21,8 +21,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 A simple realtime 3DS file previewer based on the lib3ds library.
 
-%description -l pl
-Prosta przegl±darka plików 3DS dzia³aj±ca w czasie rzeczywistym,
+%description -l pl.UTF-8
+Prosta przeglÄ…darka plikÃ³w 3DS dziaÅ‚ajÄ…ca w czasie rzeczywistym,
 oparta na bibliotece 3ds
 
 %prep
